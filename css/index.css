@@ -1,0 +1,602 @@
+.service-hd{
+	border-bottom:solid 1px #e8e8e8;
+	overflow: hidden;
+}
+.service-l{
+	float: left;
+	margin-left: 12%;
+}
+.service-l h3{
+	color: #2295e8;
+	font-size: 24px;
+	font-weight: 500;
+	display: inline-block;
+}
+.service-l span{
+	color: #b7b7b7;
+	font-size: 13px;
+}
+.more{
+	float: right;
+	margin-right: 12%;
+	font-size: 13px;
+	color: #393939;
+	margin-top: 8px;
+}
+.more:hover{
+	color: #2295e8;
+}
+.line{
+	border-top: solid 1px  #2295e8;
+	width: 100px;
+	margin-top: 10px;
+	transition: width 2s;
+}
+.service-l:hover .line{
+	width: 188px;
+}
+.service-con{
+	width: 76%;
+	background: white;
+	margin: 0 auto;
+	padding: 40px 0px 100px;
+	overflow: hidden;
+}
+.service-con li{
+	float: left;
+	/*display: inline-block;*/
+	position: relative;
+	top: 0;
+	width: 23%;
+	margin: 0 1%;
+	text-align: center;
+	transition: all 0.5s;
+}
+.service-con li:hover{
+	margin-top: 20px;
+}
+.service-con h3{
+	color rgb(128, 128, 128);
+	font-size: 15px;
+	font-weight: 500;
+	margin: 10px 0px;
+}
+.service-con p{
+	color rgb(170, 170, 170);
+	font-size: 12px;
+	line-height: 24px;
+}
+.spots-box{
+	background: rgb(249,249,249);
+	padding: 110px 0px;
+	overflow: hidden;
+}
+.spots-list{
+	width: 76%;
+	margin: 0 auto;	
+}
+.spots-list a{
+	margin-top: 40px;
+	float: left;
+	width: 32%;
+	margin-right: 2%;
+	text-align: center;
+	color: #b7b7b7;
+	font-size: 12px;
+	padding-bottom: 20px;
+	background: white;
+	position: relative;
+	top: 0;
+	transition: all 0.5s;
+}
+.spots-list p{
+	color: #999;
+	margin: 10px 0px 20px;
+	font-size: 15px;
+}
+.spots-list a:nth-child(3n){
+	margin-right: 0;
+}
+.spots-list img:first-child{
+	width: 100%;
+	display: block;
+	opacity: 1;
+	transition: all 0.5s;
+}
+.spots-list a:hover{
+	color: blue;
+	top: -6px;
+}
+.spots-list a:hover p{
+	color: #333;
+}
+.spots-list a:hover img:first-child{
+	opacity: 0.5;
+}
+.spots-list a img:last-child{
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -16px;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.spots-list a:hover img:last-child{
+	opacity: 0.7;
+	top: 100px;
+}
+.border-bar{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: solid 1px blue;
+	top: -11px;
+	left: -11px;
+	padding: 10px;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.spots-list a:hover .border-bar{
+	opacity: 1;
+	padding: 4px;
+	top: -5px;
+	left: -5px;
+}
+.villa-box{
+	background: white;
+}
+.villa-list{
+	width: 94%;
+	margin: 50px auto 0px;
+	position: relative;
+	overflow: auto;
+}
+.villa-list a{
+	float: left;
+	width: 24%;
+	height: 230px;
+	margin: 0px 0.5%;
+	background: red;
+	position: relative;
+	overflow: hidden;
+}
+.villa-list img{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	transition: all 0.5s;
+}
+.villa-info{
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+	background: rgba(255,255,255,0.9);
+	padding: 30px 0px 30px 0px;
+	text-indent: 0px;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.villa-info h3{
+	color: #333;
+	font-size: 16px;
+	font-weight: 500;
+}
+.villa-info span,.villa-info p{
+	color: #999;
+	font-size: 13px;
+}
+.villa-info span{
+	margin-left: 0px;
+	transition: all 0.5s;
+}
+.villa-info i{
+	font-size: 16px;
+	margin-right: 10px;
+	font-style: normal;
+}
+.villa-info em{
+	font-style: normal;
+}
+.br-bar{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	border: solid 1px rgb(0,151,232);
+	transition: all 0.5s;
+}
+.villa-list a:hover img{
+	width: 110%;
+	height: 110%;
+	top: -5%;
+	left: -5%;
+}
+.villa-list a:hover .villa-info{
+	opacity: 1;
+	text-indent: 25px;
+}
+.villa-list a:hover .villa-info span{
+	margin-left: 25px;
+}
+.villa-list a:hover .br-bar{
+	top: 7%;
+	left: 3%;
+	width: 94%;
+	height: 86%;
+}	
+.prev-btn,.next-btn{
+	width: 40px;
+	height: 40px;
+	background: rgb(170,169,168);
+	text-align: center;
+	line-height: 40px;
+	color: white;
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	opacity: 0.6;
+	transition: all 0.5s;
+}
+.prev-btn{
+	left: 0px;
+}
+.next-btn{
+	right: 0px;
+}
+.prev-btn:hover,.next-btn:hover{
+	opacity: 1;
+}
+.header{
+	background: transparent;
+	border: none;
+}
+.banner{
+	width: 100%;
+	height: 475px;
+	position: relative;
+	margin-top: -78px;
+	overflow: hidden;
+	z-index: -10;
+	margin-bottom: 40px;
+}
+.banner-con{
+	width: 300%;
+	font-size: 0;
+	position: absolute;
+	top: 0px;
+	left: 0%;
+	animation: swiperleft 9s infinite;
+}
+@keyframes swiperleft{
+	0%{left: 0;}
+	10%{left: -100%;}
+	50%{left: -100%;}
+	60%{left: -200%;}
+	100%{left: -200%;}
+}
+.banner-con img{
+	width: calc(100% / 3);
+}
+.banner span{
+	display: block;
+	width: 7px;
+	height: 7px;
+	background: black;
+	border-radius: 100%;
+	position: absolute;
+	bottom: 40px;
+	border: solid 3px transparent;
+}
+.banner .s1{
+	left: 49.5%;
+	background: white;
+	bottom: 37px;
+	border: solid 3px black;
+	margin-left: -3px;
+	animation: mys1 9s infinite;
+}
+@keyframes mys1{
+	0%{background: white;bottom: 37px;border: solid 3px black;margin-left: -3px;}
+	0.999%{background: black;bottom: 40px;border: solid 0px black;margin-left:0px;}				
+	50%{background: black;bottom: 40px;border: solid 0px black;margin-left:0px;}
+	50.9999%{background: white;bottom: 37px;border: solid 3px black;margin-left:-3px;}
+	100%{background: white;bottom: 37px;border: solid 3px black;margin-left:-3px;}
+}
+.banner .s2{
+	left: 51%;
+	background: black;
+	bottom: 40px;
+	border: solid 0px black;
+	margin-left: -0px;
+	animation: mys2 9s infinite;
+}
+@keyframes mys2{
+	0%{background: black;bottom: 40px;border: solid 0px black;margin-left:0px;}
+	0.999%{background: white;bottom: 37px;border: solid 3px black;margin-left: -3px;}				
+	50%{background: white;bottom: 37px;border: solid 3px black;margin-left: -3px;}
+	50.9999%{background: black;bottom: 40px;border: solid 0px black;margin-left:0px;}
+	100%{background: black;bottom: 40px;border: solid 0px black;margin-left:0px;}
+}
+.food-list{
+	width: 76%;
+	margin: 0 auto;
+	display: flex;
+	text-align: center;
+	padding: 40px 0px 0;
+}
+.food-list a{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	position: relative;
+}
+.food-list a:after{
+	content: "";
+	width: 100%;
+	height: 8px;
+	background: #ccc;
+	position: absolute;
+	bottom: -8px;
+	left: 0px;
+	transition: all 0.5s;
+}
+.food-list a:before{
+	content: "";
+	width: 102%;
+	height: 102%;
+	border: solid 1px #ccc;
+	position: absolute;
+	top: -1%;
+	left: -1%;
+	transition: all 0.5s;
+	z-index: 10;
+}
+.food-list img{
+	display: block;
+	width: 100%;
+	transform: scale(1,1);
+	transition: all 0.5s;
+}
+.food-info{
+	height: 200px;
+	background: white;
+	color: #333;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	top: 0;
+	transition: all 0.5s;
+}
+.food-list a:nth-child(2n) .food-info{
+	order: -5;
+}
+.food-list a:nth-child(2n) .line2{
+	order: 5;
+}
+.food-list a:nth-child(2n-1) .line2{
+	margin-top: 40px;
+}
+.food-list a:nth-child(2n) h4{
+	margin-top: 60px;
+}
+.food-list a:hover img{
+	transform: scale(1.1,1.1);
+}
+.food-list a:hover .food-info{
+	top: -8px;
+}
+.food-list a:hover:after{
+	bottom: 0;
+}
+.food-list a:hover:before{
+	width: 90%;
+	height: 93%;
+	top: 2%;
+	left: 5%;
+}
+.food-list a:hover .line2{
+	opacity: 0;
+}
+.food-list a:hover span{
+	opacity: 1;
+}
+.food-info .line2{
+	border-top: solid 2px #ccc;
+	margin: 0 auto;
+	width: 20px;
+	opacity: 1;
+	transition: all 0.5s;
+}
+.food-info span{
+	color: #ccc;
+	order: 10;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.food-info h4{
+	margin: 10px 0px;
+}
+.information-box{
+	background: white;
+}
+.information-list{
+	width: 76%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.information-list li{
+	width: 30%;
+	margin-top: 100px;
+}
+.information-list a:first-child{
+	color: #555555;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+	white-space: nowrap;
+	margin-bottom: 20px;
+}
+.information-list li:hover a:first-child{
+	color: blue;
+}
+.line3{
+	border-top: solid 1px #ccc;
+}
+.line4{
+	border-top: solid 1px #333;
+	margin-top: -1px;
+	width: 0;
+	transition: all 1s;
+}
+.information-list li:hover .line4{
+	width: 100%;
+}
+.information-list p{
+	color: rgb(173, 173, 173);
+	font-size: 13px;
+	line-height: 26px;
+	margin-top: 20px;
+}
+.information-list a:last-child{
+	border: solid 1px #ccc;
+	width: 31px;
+	height: 29px;
+	text-align: center;
+	line-height: 29px;
+	display: block;
+	margin-top: 30px;
+}
+.info-btn{
+	width: 150px;
+	height: 39px;
+	color: rgb(201, 201, 201);
+	border: solid 1px rgb(201, 201, 201);
+	transition: all 0.5s;
+	text-align: center;
+	line-height: 39px;
+	margin: 70px auto 0px;
+}
+.info-btn:hover{
+	color: #666;
+	border: solid 1px #666;
+}
+@media  screen  and (max-width: 640px) {
+	.banner-con img{
+		height: 280px;
+	}
+	.banner{
+		height: 280px;
+	}
+	.banner .s1{
+		left: 48%;
+	}
+	.banner .s2{
+		left: 52%;
+	}
+	.service-l h3{
+		font-size: 15px;
+	}
+	.service-l{
+		margin-left: 5%;
+	}
+	.more{
+		margin-right: 5%;
+	}
+	.service-con{
+		width: 90%;
+	}
+	.service-con li{
+		width: 48%;
+	}
+	.spots-list{
+		width: 90%;
+	}
+	.spots-list a{
+		width: 100%;
+		margin-right: 0;
+	}
+	.villa-list a{
+		float: none;
+		height: auto;
+		margin: 0;
+		overflow: visible;
+		width: 100%;
+		display: block;
+		background: white;
+	}
+	.villa-list img{
+		height: auto;
+	}
+	.villa-info{
+		position: static;
+		opacity: 1;
+		padding: 20px 0px;
+		margin-left: 0px;
+		text-indent: 15px;
+	}
+	.prev-btn, .next-btn{
+		display: none;
+	}
+	.br-bar{
+		border: none;
+	}
+	.villa-info span{
+		margin-left: 15px;
+	}
+	.villa-list a:hover img{
+		width: 100%;
+		height: 100%;
+		top: 0%;
+		left: 0%;
+	}
+	.villa-list a:hover .villa-info{
+		opacity: 1;
+		text-indent: 0px;
+	}
+	.villa-list a:hover .villa-info span{
+		margin-left: 0px;
+	}
+	.villa-list a:hover .br-bar{
+		display: none;
+	}
+	.food-list{
+		width: 90%;
+		display: block;
+	}
+	.food-list a:nth-child(2n) .food-info{
+		order: 0;
+	}
+	.food-info{
+		height: auto;
+		padding-bottom: 30px;
+	}
+	.food-info span{
+		opacity: 1;
+	}
+	.food-list a:nth-child(2n) h4 {
+	    margin-top: 30px;
+	}
+	.food-list a:nth-child(2n) .line2 {
+	    margin: 0 auto 10px;
+	}
+	.food-list a:before{
+		display: none;
+	}
+	.information-list{
+		width: 90%;
+		margin-top: 20px;
+	}
+	.information-list li {
+	    width: 100%;
+	    margin-top: 30px;
+	}
+}
